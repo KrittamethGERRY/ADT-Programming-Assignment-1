@@ -1,8 +1,14 @@
+
+/*
+ *------Krittameth Tansuwan 672115002------
+ * Date: 19/12/2024
+ */
+
+
 import java.util.Scanner;
 import java.util.StringTokenizer;
 import java.io.FileNotFoundException;
 import java.util.Vector;
-
 import java.io.File;
 
 public class StudentSort {
@@ -11,15 +17,12 @@ public class StudentSort {
         Scanner input = new Scanner(file);
         Vector<String> text = new Vector<String>(10);
         Vector<Student> std = new Vector<Student>(10);
-        boolean isOpen = false;
 
-
-
+        // Split the string from commas and store in Vector of String.
         while (input.hasNextLine()) {
             String line = input.nextLine();
             StringTokenizer st = new StringTokenizer(line, ",");
-            if (line.contains("67211") || line.contains("66211") || line.contains("65211")
-            || line.contains("64211")|| line.contains("63211") || line.contains("62211"))   {
+            if (line.contains("2115"))   {
                 if (st.hasMoreTokens()) {
                     st.nextToken();
                 }
@@ -28,6 +31,8 @@ public class StudentSort {
                 }
             }
         }
+
+        // Creates students object and store in Vector of Student object.
         for (int i = 0; i < text.size(); i+= 3) {
             Student student = new Student(null, null, null);
             student.setStudentID(text.get(i));
@@ -36,6 +41,7 @@ public class StudentSort {
             std.add(student);
         }
 
+        // Check the args input.
         if (args.length > 1) {
             switch (args[0]) {
                 case "-n": System.out.println("Sort by student ID: "); Sorting.sortByID(std);
@@ -53,10 +59,6 @@ public class StudentSort {
                     break;
             }
         }
-
         input.close();
     }
-
-
-
 }
