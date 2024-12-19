@@ -2,7 +2,7 @@
 
 Krittameth Tansuwan SID: 672115002
 
-This program is used to sort the Excel members list, classified by student ID, first name, and last name.
+This program is used to sort the Excel members list and search for a member by enter first name, classified by student ID, first name, and last name.
 NOTE: This program only works for the Software Engineering Bachelor degree student's ID, which has "**2115***" 
 
 ## HOW TO COMPILE & RUN ##
