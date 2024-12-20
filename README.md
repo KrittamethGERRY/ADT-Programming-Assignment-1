@@ -3,7 +3,6 @@
 Krittameth Tansuwan SID: 672115002
 
 This program is used to sort the Excel members list and search for a member by enter first name, classified by student ID, first name, and last name.  
-NOTE: This program only works for the Software Engineering Bachelor degree student's ID, which has "\*\*2115*\*\*\"  
 
 ## HOW TO COMPILE & RUN ##
 1. Open the terminal in the .java directory (right-click on the blank space inside the folder and then click terminal).
