@@ -1,7 +1,7 @@
 
 /*
  *------Krittameth Tansuwan 672115002------
- * Date: 19/12/2024
+ * Edit Date: 20/12/2024
  */
 
 import java.util.Scanner;
